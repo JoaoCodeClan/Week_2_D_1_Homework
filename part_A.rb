@@ -9,6 +9,10 @@ class CodeClanStudent
 
  def cohort
    return @cohort
+ end
+
+ def name_change(new_name)
+   @name = new_name
  end 
 
 
