@@ -31,4 +31,9 @@ def test_add_new_player
   @team.new_player("Hypo")
   assert_equal(["striker","defense","goalkeeper","Hypo"],@team.players)
 end
-end 
+def test_in_team
+  @team.in_team("Rob")
+  assert_equal(false,@team.in_team("Rob"))
+end
+
+end

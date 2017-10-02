@@ -25,6 +25,10 @@ class SportTeam
 
   def new_player(player_name)
     @players.push(player_name)
-  end 
+  end
+
+  def in_team(name)
+    @players.include?(name)
+  end
 
 end
