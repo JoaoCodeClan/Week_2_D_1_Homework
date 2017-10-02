@@ -27,5 +27,8 @@ class TestPartB < MiniTest::Test
     @team.coach = "Snail"
     assert_equal("Snail", @team.coach)
   end
-
+def test_add_new_player
+  @team.new_player("Hypo")
+  assert_equal(["striker","defense","goalkeeper","Hypo"],@team.players)
 end
+end 
