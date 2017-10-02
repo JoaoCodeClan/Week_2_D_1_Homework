@@ -31,9 +31,9 @@ class TestPartA < MiniTest::Test
     assert_equal("Hello there!", @student.greeting)
   end
 
-  def test_student_language
+  def test_student_favourite_language
     @student.language("Morse")
-    assert_equal("Morse", @student.language)
+    assert_equal("My favourite language is Morse", @student.language("Morse"))
   end
 
 end

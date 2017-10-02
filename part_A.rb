@@ -20,6 +20,10 @@ class CodeClanStudent
   end
 
   def greeting
-return "Hello there!"
+    return "Hello there!"
+  end
+
+  def language(language)
+    return "My favourite language is #{language}"
   end
 end
