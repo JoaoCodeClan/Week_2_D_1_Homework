@@ -22,4 +22,9 @@ class TestPartB < MiniTest::Test
     assert_equal("Simba",@team.coach)
   end
 
+  def test_set_coach_name
+    @team.new_coach("Snail")
+    assert_equal("Snail", @team.coach)
+  end
+
 end
