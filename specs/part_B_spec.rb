@@ -10,30 +10,39 @@ class TestPartB < MiniTest::Test
     @team = SportTeam.new("Lions",["striker","defense","goalkeeper"],"Simba")
   end
 
-  def test_team_name
-    assert_equal("Lions",@team.name)
+  # def test_team_name
+  #   assert_equal("Lions",@team.name)
+  # end
+  #
+  # def test_team_players
+  #   assert_equal(["striker","defense","goalkeeper"], @team.players)
+  # end
+  #
+  # def test_team_coach
+  #   assert_equal("Simba",@team.coach)
+  # # end
+  #
+  # def test_set_coach_name
+  #   #@team.new_coach("Snail")
+  #   @team.coach = "Snail"
+  #   assert_equal("Snail", @team.coach)
+  # end
+  # def test_add_new_player
+  #   @team.new_player("Hypo")
+  #   assert_equal(["striker","defense","goalkeeper","Hypo"],@team.players)
+  # end
+  # def test_in_team
+  #   @team.in_team("Rob")
+  #   assert_equal(false,@team.in_team("Rob"))
+  # end
+
+  def test_points_add
+    @team.result("Win")
+    assert_equal(1,@team.points)
   end
-
-  def test_team_players
-   assert_equal(["striker","defense","goalkeeper"], @team.players)
- end
-
-  def test_team_coach
-    assert_equal("Simba",@team.coach)
-  end
-
-  def test_set_coach_name
-    #@team.new_coach("Snail")
-    @team.coach = "Snail"
-    assert_equal("Snail", @team.coach)
-  end
-def test_add_new_player
-  @team.new_player("Hypo")
-  assert_equal(["striker","defense","goalkeeper","Hypo"],@team.players)
-end
-def test_in_team
-  @team.in_team("Rob")
-  assert_equal(false,@team.in_team("Rob"))
-end
-
+  # def test_points_loss
+  #   @team.result("Defeat")
+  #
+  #   assert_equal(-1,@team.points)
+  # end
 end
