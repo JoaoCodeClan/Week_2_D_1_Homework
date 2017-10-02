@@ -18,7 +18,7 @@ class CodeClanStudent
   def cohort_change(new_cohort)
     @cohort = new_cohort
   end
-
+  
   def greeting
     return "Hello there!"
   end

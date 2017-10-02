@@ -7,6 +7,19 @@ class TestPartB < MiniTest::Test
 
   @team
   def setup
-@team = SportTeam.new("Lions",["striker","defense","goalkeeper"],"Simba")
+    @team = SportTeam.new("Lions",["striker","defense","goalkeeper"],"Simba")
   end
-    
+
+  def test_team_name
+    assert_equal("Lions",@team.name)
+  end
+
+  def test_team_players
+   assert_equal(["striker","defense","goalkeeper"], @team.players)
+ end
+
+  def test_team_coach
+    assert_equal("Simba",@team.coach)
+  end
+
+end
