@@ -23,7 +23,8 @@ class TestPartB < MiniTest::Test
   end
 
   def test_set_coach_name
-    @team.new_coach("Snail")
+    #@team.new_coach("Snail")
+    @team.coach = "Snail"
     assert_equal("Snail", @team.coach)
   end
 
