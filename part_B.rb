@@ -4,6 +4,7 @@ class SportTeam
     @name = team_name
     @players = players
     @coach = coach
+    @points = 0
 
   end
 
